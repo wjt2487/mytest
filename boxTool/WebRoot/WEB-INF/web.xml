@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>BoxBatchAddDataServlet</servlet-name>
+    <servlet-class>servlet.BoxBatchAddDataServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BoxBatchModifyHisDataServlet</servlet-name>
+    <servlet-class>servlet.BoxBatchModifyHisDataServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BoxAddOneDataServlet</servlet-name>
+    <servlet-class>servlet.BoxAddOneDataServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BoxQueryHisDataServlet</servlet-name>
+    <servlet-class>servlet.BoxQueryHisDataServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BoxModifyOneDataServlet</servlet-name>
+    <servlet-class>servlet.BoxModifyOneDataServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BoxBatchDeleteDataServlet</servlet-name>
+    <servlet-class>servlet.BoxBatchDeleteDataServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BoxBatchOperate</servlet-name>
+    <servlet-class>servlet.BoxBatchOperate</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>BoxBatchAddDataServlet</servlet-name>
+    <url-pattern>/bad</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BoxBatchModifyHisDataServlet</servlet-name>
+    <url-pattern>/bmd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BoxAddOneDataServlet</servlet-name>
+    <url-pattern>/bado</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BoxQueryHisDataServlet</servlet-name>
+    <url-pattern>/qboxhis</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BoxModifyOneDataServlet</servlet-name>
+    <url-pattern>/bmdo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BoxBatchDeleteDataServlet</servlet-name>
+    <url-pattern>/bdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BoxBatchOperate</servlet-name>
+    <url-pattern>/boxOper</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
